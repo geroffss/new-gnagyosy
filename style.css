@@ -12,6 +12,77 @@ body {
 
 }
 
+.button-1 {
+    background: var(--brand-1, #12f7d6);
+    border-radius: 32px;
+    padding: 16px 32px 16px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+
+}
+
+.button-1-text {
+    color: var(--bg-1, #292f36);
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--button-u-font-size, 20px);
+    line-height: var(--button-u-line-height, 24px);
+    font-weight: var(--button-u-font-weight, 400);
+    position: relative;
+}
+
+.button-2 {
+    background: var(--bg-1, #292f36);
+    border-radius: 32px;
+    border-style: solid;
+    border-color: var(--brand-1, #12f7d6);
+    border-width: 2px;
+    padding: 16px 32px 16px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.button-2-text {
+    color: var(--white, #ffffff);
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--button-u-font-size, 20px);
+    line-height: var(--button-u-line-height, 24px);
+    font-weight: var(--button-u-font-weight, 400);
+    position: relative;
+}
+
+.section-title-text {
+    color: var(--brand-1, #12f7d6);
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--h-2-u-font-size, 32px);
+    line-height: var(--h-2-u-line-height, 36px);
+    font-weight: var(--h-2-u-font-weight, 400);
+    position: relative;
+    align-self: stretch;
+}
+
+.section-content-text {
+    color: var(--white, #ffffff);
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--para-u-font-size, 16px);
+    line-height: var(--para-u-line-height, 18px);
+    font-weight: var(--para-u-font-weight, 300);
+    position: relative;
+    width: 312px;
+}
 
 .nav {
     background: #292F36;
@@ -766,33 +837,103 @@ a.join:visited {
     color: #28a9e0;
 }
 
-.skills{
+.skills {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.work-title{
+
+.work-title {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
-.glassmorph{
-    background: rgba(255,255,255,0.2);
--webkit-backdrop-filter: blur(10px);
-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.1);
+.glassmorph {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.works-div-1{
+.works-div-1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 5%;
 }
+
+.works-div-1 {
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.dual-screen img {
+    width: 100%;
+}
+
+.line-24 {
+    border-style: solid;
+    border-color: var(--white, #ffffff);
+    border-width: 1px 0 0 0;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 0px;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    overflow: hidden;
+}
+
+.blogs-content {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    margin: 5%;
+}
+
+.blogs-img {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.blogs-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.blogs-button {
+    gap: 32px;
+    margin: 5%;
+}
+
 @media screen and (max-width: 975px) {
 
     .nav {
@@ -975,9 +1116,7 @@ border: 1px solid rgba(255,255,255,0.1);
         padding: 0;
     }
 
-    .work-content {
-        margin: 5%;
-    }
+    .work-content {}
 
     .workdiv1 {
         flex-wrap: wrap;
@@ -986,6 +1125,32 @@ border: 1px solid rgba(255,255,255,0.1);
         border-radius: 0;
     }
 
-    .about-me-connection{
+    .about-me-connection {
         display: none;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .works-div-1 {
+        flex-direction: row;
+        width: fit-content;
+    }
+
+    .dual-screen img {
+        width: 100%;
+    }
+
+    .blogs {
+        margin-bottom: 15%;
+    }
+
+    .blogs-content {
+        flex-direction: column;
+    }
+
+    .blogs-button {
+        margin-top: 5%;
+        gap: 20px;
     }
